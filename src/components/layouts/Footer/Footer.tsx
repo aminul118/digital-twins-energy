@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const Footer = () => {
@@ -7,7 +6,6 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo and Description */}
         <div>
-   
           <p className="text-sm leading-relaxed">
             Bringing you the best solutions for your business. <br />
             Connect with us for a seamless experience.
@@ -85,7 +83,8 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Percel Point. All rights reserved.
+        &copy; {new Date().getFullYear()} Digital Twin Technolog. All rights
+        reserved.
       </div>
     </footer>
   );

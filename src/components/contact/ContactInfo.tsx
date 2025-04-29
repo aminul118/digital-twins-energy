@@ -14,7 +14,7 @@ const contactDetails = [
 
 const ContactInfo = () => {
   return (
-    <div className="py-12 px-4 sm:px-8 lg:px-12">
+    <div data-aos="fade-right" className="py-12 px-4 sm:px-8 lg:px-12">
       <div className="max-w-3xl mx-auto  p-8">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
           Contact Information

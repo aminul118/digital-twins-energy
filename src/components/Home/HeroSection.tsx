@@ -1,6 +1,5 @@
-"use client";
-
-import { Typewriter } from "react-simple-typewriter";
+import { Flame, Sun } from "lucide-react";
+import TypeWritter from "./TypeWritter";
 
 const HeroSection = () => {
   return (
@@ -9,20 +8,7 @@ const HeroSection = () => {
         {/* header */}
         <header className="flex lg:flex-row flex-col items-center gap-12 lg:gap-0 justify-between px-8 mt-10">
           <div className="w-full lg:w-[45%]">
-            <h1 className="text-4xl sm:text-[60px] font-semibold  sm:leading-20">
-              <Typewriter
-                words={[
-                  " Revolutionizing Energy Through AI Optimization",
-                  "Optimizing Energy Systems with Digital Twin Technolog",
-                ]}
-                cursor
-                loop={1}
-                cursorStyle=""
-                typeSpeed={30}
-                deleteSpeed={100}
-                delaySpeed={2000}
-              />
-            </h1>
+            <TypeWritter />
           </div>
 
           <div className="w-full lg:w-[55%]">
@@ -38,37 +24,20 @@ const HeroSection = () => {
           <h1 className="text-[1.3rem] font-semibold">Our Service</h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-10 w-[70%]">
-            <div>
-              <img
-                src="https://i.ibb.co/z721j8b/Vector.png"
-                alt="Vector"
-                className="w-[30px]"
-              />
-              <h4 className="text-[1.1rem] mt-3">Branding</h4>
+            <div data-aos="fade-right">
+              <Sun className="w-14 h-14 text-yellow-500" />
+              <h4 className="text-[1.1rem] mt-3">Solar Energy</h4>
               <p className="text-[0.9rem] text-gray-500 mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Optimize solar energy systems through simulation, predictive
+                analytics, and real-time monitoring.
               </p>
             </div>
-            <div>
-              <img
-                src="https://i.ibb.co/Qn78BRJ/Ui-Design.png"
-                alt="Vector"
-                className="w-[30px]"
-              />
-              <h4 className="text-[1.1rem] mt-3">UI/UX</h4>
+            <div data-aos="fade-left">
+              <Flame className="w-14 h-14 text-orange-600" />
+              <h4 className="text-[1.1rem] mt-3">Oil & Gas</h4>
               <p className="text-[0.9rem] text-gray-500 mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div>
-              <img
-                src="https://i.ibb.co/GcsvXxk/Product.png"
-                alt="Vector"
-                className="w-[30px]"
-              />
-              <h4 className="text-[1.1rem] mt-3">Product Design</h4>
-              <p className="text-[0.9rem] text-gray-500 mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Enhance safety, efficiency, and maintenance of oil and gas
+                infrastructure using digital twin modeling.
               </p>
             </div>
           </div>

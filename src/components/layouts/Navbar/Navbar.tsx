@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
-import { MdLaptopMac, MdOutlineArrowRightAlt } from "react-icons/md";
-import { AiOutlineFire } from "react-icons/ai";
-import { BiHome, BiSupport } from "react-icons/bi";
-import Link from "next/link"; // Use the Next.js Link component for navigation
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
+import Link from "next/link";
 import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
 import { Button } from "@/components/ui/button";
+import { Home, Info, Settings2, Target } from "lucide-react";
 
 const ResponsiveNavbar = () => {
   const [isProductHover, setIsProductHover] = useState(false);
@@ -35,7 +35,7 @@ const ResponsiveNavbar = () => {
             <li>
               <Link href="/" passHref>
                 <div className="flex items-center hover:text-blue-500 gap-2 text-white">
-                  <BiHome className="text-[1.2rem]" />
+                  <Home className="text-[1.2rem]" />
                   Home
                 </div>
               </Link>
@@ -43,7 +43,7 @@ const ResponsiveNavbar = () => {
             <li>
               <Link href="/about" passHref>
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  <AiOutlineFire className="text-[1.2rem]" />
+                  <Info className="text-[1.2rem]" />
                   About
                 </div>
               </Link>
@@ -56,7 +56,7 @@ const ResponsiveNavbar = () => {
               onMouseLeave={() => setIsProductHover(false)}
             >
               <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 text-white">
-                <MdLaptopMac className="text-[1.2rem]" />
+                <Settings2 className="text-[1.2rem]" />
                 Services
                 <IoIosArrowUp
                   className={`transition-transform ${
@@ -69,7 +69,7 @@ const ResponsiveNavbar = () => {
             <li>
               <Link href="/vison" passHref>
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  <AiOutlineFire className="text-[1.2rem]" />
+                  <Target className="text-[1.2rem]" />
                   Vison
                 </div>
               </Link>

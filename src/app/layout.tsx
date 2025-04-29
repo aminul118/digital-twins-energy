@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { TChildren } from "@/lib/types/types";
 import { poppins } from "@/lib/fonts";
+import { ThemeProvider } from "./providers/ThemeProvider";
+import AosProvider from "./providers/AosProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,7 +13,16 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: TChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AosProvider>{children}</AosProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 };

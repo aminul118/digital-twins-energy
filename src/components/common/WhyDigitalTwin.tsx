@@ -33,10 +33,10 @@ const WhyDigitalTwin = () => {
 
       <div className="relative w-full max-w-7xl mx-auto text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold  mb-4">
+          <h2 data-aos="fade-left" className="text-3xl font-bold  mb-4">
             Why Digital Twin Energy LLC?
           </h2>
-          <p className=" mb-10  mx-auto">
+          <p data-aos="fade-right" className=" mb-10  mx-auto">
             orem ipsum dolor sit amet consectetur, adipisicing elit. Earum atque
             similique, rerum labore odio sit ducimus nisi neque facilis vero!
           </p>
@@ -45,7 +45,11 @@ const WhyDigitalTwin = () => {
         {/* Cards Container */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 mt-12 md:mt-16 w-full">
           {features.map(({ id, icon, title, description }) => (
-            <div key={id} className="flex flex-col items-center">
+            <div
+              data-aos="fade-up"
+              key={id}
+              className="flex flex-col items-center"
+            >
               {icon}
               <h2 className="text-xl sm:text-2xl md:text-2xl mt-2 font-semibold">
                 {title}
