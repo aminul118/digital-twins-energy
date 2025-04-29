@@ -1,8 +1,6 @@
-import Footer from "@/components/layouts/Footer/Footer";
-import ResponsiveNavbar from "@/components/layouts/Navbar/Navbar";
-
 import { TChildren } from "@/lib/types/types";
-import React from "react";
+import ResponsiveNavbar from "@/components/layouts/Navbar/Navbar";
+import Footer from "@/components/layouts/Footer/Footer";
 
 const MainLayout = ({ children }: TChildren) => {
   return (
