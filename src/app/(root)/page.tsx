@@ -1,5 +1,7 @@
 import HeroSection from "@/components/Home/HeroSection";
-import WhyDigitalTwin from "@/components/Home/WhyDigitalTwin";
+import IndustriesServed from "@/components/Home/IndustriesServed";
+import OurSolutions from "@/components/Home/OurSolution";
+import WhyDigitalTwin from "@/components/common/WhyDigitalTwin";
 import React from "react";
 
 const HomePage = () => {
@@ -7,6 +9,8 @@ const HomePage = () => {
     <div>
       <HeroSection />
       <WhyDigitalTwin />
+      <IndustriesServed />
+      <OurSolutions />
     </div>
   );
 };

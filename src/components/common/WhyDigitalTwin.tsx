@@ -27,18 +27,20 @@ const features = [
 
 const WhyDigitalTwin = () => {
   return (
-    <div className="relative bg-[url('/assets/background/bg-solar.png')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 px-4">
+    <div className="relative bg-[url('/assets/background/bg-solar.png')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 2xl:py-40 px-4">
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative w-full max-w-7xl mx-auto text-white text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-          Why Digital Twin Energy LLC?
-        </h1>
-        <p className="mt-4 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum atque
-          similique, rerum labore odio sit ducimus nisi neque facilis vero!
-        </p>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold  mb-4">
+            Why Digital Twin Energy LLC?
+          </h2>
+          <p className=" mb-10  mx-auto">
+            orem ipsum dolor sit amet consectetur, adipisicing elit. Earum atque
+            similique, rerum labore odio sit ducimus nisi neque facilis vero!
+          </p>
+        </div>
 
         {/* Cards Container */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 mt-12 md:mt-16 w-full">
