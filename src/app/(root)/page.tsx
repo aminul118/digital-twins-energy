@@ -1,3 +1,4 @@
+import FAQ from "@/components/Home/FAQ";
 import HeroSection from "@/components/Home/HeroSection";
 import OurSolutions from "@/components/Home/OurSolution";
 import WhyDigitalTwin from "@/components/common/WhyDigitalTwin";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HeroSection />
       <OurSolutions />
       <WhyDigitalTwin />
+      <FAQ />
       <ContactUs />
     </div>
   );

@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const contactDetails = [
   { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
-  { id: 2, icon: FaEnvelope, text: "info@tabedge.com" },
+  { id: 2, icon: FaEnvelope, text: "info@digitaltwinsenergy.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,

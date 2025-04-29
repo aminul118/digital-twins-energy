@@ -67,7 +67,7 @@ const ResponsiveNavbar = () => {
             </li>
 
             <li>
-              <Link href="/vison" passHref>
+              <Link href="/vision" passHref>
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
                   <Target className="text-[1.2rem]" />
                   Vison
