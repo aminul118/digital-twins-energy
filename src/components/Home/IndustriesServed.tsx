@@ -22,13 +22,12 @@ const industries = [
 const IndustriesServed = () => {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
-      <div className="max-w-5xl mx-auto ">
+      <div className="container mx-auto">
         <SectionTitle
           title=" Industries We Serve"
           details="  Digital Twin Energy LLC delivers tailored solutions for the Solar and
           Oil & Gas industries."
         />
-        
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {industries.map(({ id, title, description, icon }) => (
