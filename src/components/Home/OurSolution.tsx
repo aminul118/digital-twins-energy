@@ -15,7 +15,7 @@ const OurSolutions = () => {
           {services.map(({ id, title, description, icon }) => (
             <Card
               key={id}
-              className="flex flex-col items-center text-center p-6 hover:shadow-md transition rounded-2xl"
+              className="flex flex-col items-center text-center  hover:shadow-md transition rounded-2xl"
             >
               <div className="mb-4">{icon}</div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">

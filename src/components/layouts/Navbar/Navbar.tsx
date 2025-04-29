@@ -79,10 +79,10 @@ const ResponsiveNavbar = () => {
           {/* Right Side */}
           <div className=" flex  items-center gap-4">
             <Button className="" variant="destructive">
-              <Link href="/support" passHref>
-                <div className="flex items-center gap-2 hover:text-blue-500 text-white">
+              <Link href="/contact" passHref>
+                <div className="flex items-center gap-2 text-white">
                   <BiSupport className="text-[1.2rem]" />
-                  Support
+                  Contact
                 </div>
               </Link>
             </Button>

@@ -1,6 +1,6 @@
 type TSectionTitle = {
   title: string;
-  details: string;
+  details?: string;
 };
 
 const SectionTitle = ({ title, details }: TSectionTitle) => {
