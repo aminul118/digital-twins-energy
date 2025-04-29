@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import { BiSupport } from "react-icons/bi";
 import Link from "next/link";
 import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
 import { Button } from "@/components/ui/button";
-import { Home, Info, Settings2, Target } from "lucide-react";
+import { Home, Info, PhoneCall, Settings2, Target } from "lucide-react";
 import { ModeToggle } from "./Toggle";
 
 const ResponsiveNavbar = () => {
@@ -83,7 +82,7 @@ const ResponsiveNavbar = () => {
             <Button className="" variant="destructive">
               <Link href="/contact" passHref>
                 <div className="flex items-center gap-2 text-white">
-                  <BiSupport className="text-[1.2rem]" />
+                  <PhoneCall className="text-[1.2rem]" />
                   Contact
                 </div>
               </Link>

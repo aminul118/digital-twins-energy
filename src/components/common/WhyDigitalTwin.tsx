@@ -6,22 +6,23 @@ const features = [
   {
     id: 1,
     icon: <RiSecurePaymentLine className="text-5xl text-yellow-400" />,
-    title: "Safe & Secure",
+    title: "Trusted & Transparent",
     description:
-      "Your personal and financial information are secured by ISO standards.",
+      "We maintain full transparency in our processes, ensuring trust at every stage of your energy journey.",
   },
   {
     id: 2,
     icon: <TbLicense className="text-5xl text-green-400" />,
-    title: "Licensed & Regulated",
+    title: "Certified & Compliant",
     description:
-      "Transaction with confidence, knowing our operations are fully regulated.",
+      "Our operations are fully licensed and compliant with national energy and sustainability regulations.",
   },
   {
     id: 3,
     icon: <RiBankLine className="text-5xl text-blue-400" />,
-    title: "Protected Funds",
-    description: "100% of your funds are kept in the bank at all times.",
+    title: "Financially Backed",
+    description:
+      "We safeguard your investments through partnerships with top-tier financial institutions.",
   },
 ];
 
@@ -29,16 +30,18 @@ const WhyDigitalTwin = () => {
   return (
     <div className="relative bg-[url('/assets/background/bg-solar.png')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 2xl:py-40 px-4">
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative w-full max-w-7xl mx-auto text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 data-aos="fade-left" className="text-3xl font-bold  mb-4">
+          <h2 data-aos="fade-left" className="text-3xl font-bold mb-4">
             Why Digital Twin Energy LLC?
           </h2>
-          <p data-aos="fade-right" className=" mb-10  mx-auto">
-            orem ipsum dolor sit amet consectetur, adipisicing elit. Earum atque
-            similique, rerum labore odio sit ducimus nisi neque facilis vero!
+          <p data-aos="fade-right" className="mb-10 text-gray-300">
+            At Digital Twin Energy LLC, we combine advanced technology with
+            sustainable solutions to deliver reliable and efficient energy
+            systems. Our commitment to safety, compliance, and transparency sets
+            us apart in the clean energy sector.
           </p>
         </div>
 
@@ -48,12 +51,12 @@ const WhyDigitalTwin = () => {
             <div
               data-aos="fade-up"
               key={id}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center text-center"
             >
               {icon}
-              <h2 className="text-xl sm:text-2xl md:text-2xl mt-2 font-semibold">
+              <h3 className="text-xl sm:text-2xl mt-2 font-semibold">
                 {title}
-              </h2>
+              </h3>
               <p className="mt-3 text-gray-200 text-sm sm:text-base">
                 {description}
               </p>
