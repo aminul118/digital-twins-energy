@@ -16,7 +16,7 @@ const ContactInfo = () => {
   return (
     <div data-aos="fade-right" className="py-12 px-4 sm:px-8 lg:px-12">
       <div className="max-w-3xl mx-auto  p-8">
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-white/90 text-center mb-6">
           Contact Information
         </h2>
         <ul className="space-y-4 flex flex-col items-center">
@@ -25,7 +25,9 @@ const ContactInfo = () => {
               <div className=" bg-blue-500/90 p-2 text-white rounded-full">
                 <Icon size={26} className=" md:text-2xl lg:text-3xl" />
               </div>
-              <span className="ml-4 text-gray-700 font-medium">{text}</span>
+              <span className="ml-4 text-gray-700 dark:text-white/70 font-medium">
+                {text}
+              </span>
             </li>
           ))}
         </ul>

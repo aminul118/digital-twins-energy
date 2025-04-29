@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
 import { Button } from "@/components/ui/button";
 import { Home, Info, Settings2, Target } from "lucide-react";
+import { ModeToggle } from "./Toggle";
 
 const ResponsiveNavbar = () => {
   const [isProductHover, setIsProductHover] = useState(false);
@@ -78,6 +79,7 @@ const ResponsiveNavbar = () => {
 
           {/* Right Side */}
           <div className=" flex  items-center gap-4">
+            <ModeToggle />
             <Button className="" variant="destructive">
               <Link href="/contact" passHref>
                 <div className="flex items-center gap-2 text-white">
