@@ -27,7 +27,11 @@ const AboutCompany = () => {
       <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center ">
         <div className="absolute transform rotate-45 grid grid-cols-2  md:w-[360px] md:h-[360px]">
           {imageSources.map((image, index) => (
-            <div key={index} className="overflow-hidden border">
+            <div
+              data-aos="fade-right"
+              key={index}
+              className="overflow-hidden border"
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -41,7 +45,7 @@ const AboutCompany = () => {
       </div>
 
       {/* Text Content */}
-      <div>
+      <div data-aos="fade-left">
         <p className="text-muted-foreground text-sm font-semibold uppercase mb-2">
           About Our Company
         </p>
