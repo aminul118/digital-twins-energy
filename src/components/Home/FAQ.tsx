@@ -19,6 +19,7 @@ const FAQ = () => {
         {/* FAQ Image */}
         <div className="mx-auto">
           <Image
+            data-aos="fade-left"
             // data-aos="fade-left"
             src={"/assets/icon/FAQ.png"}
             width={500}
@@ -32,11 +33,7 @@ const FAQ = () => {
         <div className="max-w-xl w-full px-4">
           <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((item) => (
-              <AccordionItem
-                // data-aos="fade-right"
-                key={item.value}
-                value={item.value}
-              >
+              <AccordionItem key={item.value} value={item.value}>
                 <AccordionTrigger data-aos="fade-right">
                   {item.question}
                 </AccordionTrigger>

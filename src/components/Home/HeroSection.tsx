@@ -25,7 +25,7 @@ const HeroSection = () => {
           <h1 className="text-xl font-semibold">Our Service</h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-            <div>
+            <div data-aos="fade-right">
               <Sun className="w-14 h-14 text-yellow-500" />
               <h4 className="text-lg mt-3 dark:text-white/90">Solar Energy</h4>
               <p className="text-sm text-gray-500 dark:text-white/60 mt-1">
@@ -33,7 +33,7 @@ const HeroSection = () => {
                 analytics, and real-time monitoring.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <Flame className="w-14 h-14 text-orange-600" />
               <h4 className="text-lg mt-3 dark:text-white/90">Oil & Gas</h4>
               <p className="text-sm text-gray-500 dark:text-white/60 mt-1">

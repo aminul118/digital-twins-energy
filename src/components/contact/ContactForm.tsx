@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
       <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white/90">
         Contact Us
       </h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form data-aos="fade-left" onSubmit={handleSubmit(onSubmit)}>
         <div className="grid gap-5">
           {/* Name Input */}
           <div>
