@@ -1,5 +1,5 @@
 import { Flame, Sun } from "lucide-react";
-import TypeWritter from "./TypeWritter";
+
 
 const HeroSection = () => {
   return (
@@ -7,9 +7,9 @@ const HeroSection = () => {
       <div className="container mx-auto py-6 px-4">
         {/* header */}
         <header className="flex flex-col lg:flex-row items-center justify-between gap-12 mt-10">
-          <div className="w-full lg:w-[45%]">
-            <TypeWritter />
-          </div>
+          {/* <div className="w-full lg:w-[45%]">
+     
+          </div> */}
 
           <div className="w-full lg:w-[55%]">
             <img
