@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-import { CiMenuFries } from "react-icons/ci";
 
 import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
 import { ModeToggle } from "./Toggle";
+import { Menu, X } from "lucide-react";
 
 const MobileNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -34,7 +34,7 @@ const MobileNavbar = () => {
           <p className="text-2xl font-semibold text-white">Point</p>
         </Link>
 
-        <CiMenuFries
+        <Menu
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
           className="text-[2rem] cursor-pointer text-white"
         />
@@ -42,19 +42,19 @@ const MobileNavbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 w-[260px] h-full bg-white shadow-lg transform transition-transform duration-300 z-50 overflow-y-auto ${
+        className={`fixed top-0 right-0 w-[260px] h-full bg-white dark:bg-slate-900 shadow-lg transform transition-transform duration-300 z-50 overflow-y-auto ${
           mobileSidebarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={() => setMobileSidebarOpen(false)}
-            className="text-2xl"
+            className="text-2xl text-red-500"
           >
-            ✖️
+            <X />
           </button>
         </div>
-        <ul className="flex flex-col p-6 gap-4 text-gray-700">
+        <ul className="flex flex-col p-6 gap-4 text-gray-700 dark:text-white/80">
           <li>
             <Link href="/" onClick={() => setMobileSidebarOpen(false)}>
               Home
@@ -79,7 +79,7 @@ const MobileNavbar = () => {
           </li>
 
           {isMegaMenuCollapse && (
-            <ul className="ml-4 flex flex-col gap-2 text-sm text-gray-600">
+            <ul className="ml-4 flex flex-col gap-2 text-sm text-gray-600 dark:text-white/80 ">
               {moreProducts.map((product, idx) => (
                 <li key={idx}>
                   <Link
