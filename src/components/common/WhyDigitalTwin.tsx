@@ -35,13 +35,13 @@ const WhyDigitalTwin = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto text-white text-center">
         <div className="max-w-3xl mx-auto px-2 sm:px-4">
           <h2
-            data-aos="fade-left"
+            // data-aos="fade-left"
             className="text-2xl sm:text-3xl font-bold mb-4"
           >
             Why Digital Twin Energy LLC?
           </h2>
           <p
-            data-aos="fade-right"
+            // data-aos="fade-right"
             className="text-sm sm:text-base mb-10 text-gray-300"
           >
             At Digital Twin Energy LLC, we combine advanced technology with
@@ -55,7 +55,7 @@ const WhyDigitalTwin = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 px-2 sm:px-0">
           {features.map(({ id, icon, title, description }) => (
             <div
-              data-aos="fade-up"
+              // data-aos="fade-up"
               key={id}
               className="flex flex-col items-center text-center bg-white/5 p-6 rounded-xl backdrop-blur-sm"
             >

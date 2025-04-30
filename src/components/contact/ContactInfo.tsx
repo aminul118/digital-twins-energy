@@ -1,9 +1,9 @@
 import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const contactDetails = [
   { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
-  { id: 2, icon: FaEnvelope, text: "info@digitaltwinsenergy.com" },
+  // { id: 2, icon: FaEnvelope, text: "info@digitaltwinsenergy.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,
@@ -29,7 +29,7 @@ const ContactInfo = () => {
                 {/* Responsive icon sizes */}
                 <Icon size={10} />
               </div>
-              <span className="text-gray-700 dark:text-white/70 font-medium break-words">
+              <span className="text-gray-700 dark:text-white/70 break-words">
                 {text}
               </span>
             </li>

@@ -2,7 +2,7 @@ import HeroSection from "@/components/Home/HeroSection";
 import OurSolutions from "@/components/Home/OurSolution";
 import WhyDigitalTwin from "@/components/common/WhyDigitalTwin";
 import FAQ from "@/components/Home/FAQ";
-// import ContactUs from "@/components/contact/ContactUs";
+import ContactUs from "@/components/contact/ContactUs";
 
 const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ const HomePage = () => {
       <OurSolutions />
       <WhyDigitalTwin />
       <FAQ />
-      {/* <ContactUs /> */}
+      <ContactUs />
     </>
   );
 };

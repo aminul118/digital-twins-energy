@@ -3,15 +3,15 @@ import { Typewriter } from "react-simple-typewriter";
 
 const TypeWritter = () => {
   return (
-    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight sm:leading-snug text-center px-4 sm:px-6 lg:px-12">
+    <h1 className="text-2xl lg:text-5xl font-bold leading-8 lg:leading-16 lg:h-96 h-24">
       <Typewriter
         words={[
-          "Revolutionizing Energy Through AI Optimization",
-          "Optimizing Energy Systems with Digital Twin Technology",
+          " Revolutionizing Energy Through AI Optimization",
+          "Optimizing Energy Systems with Digital Twin Technolog",
         ]}
         cursor
         loop={1}
-        cursorStyle="|"
+        cursorStyle=""
         typeSpeed={30}
         deleteSpeed={100}
         delaySpeed={2000}
