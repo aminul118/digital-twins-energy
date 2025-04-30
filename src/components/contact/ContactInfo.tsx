@@ -14,18 +14,22 @@ const contactDetails = [
 
 const ContactInfo = () => {
   return (
-    <div data-aos="fade-right" className="py-12 px-4 sm:px-8 lg:px-12">
-      <div className="max-w-3xl mx-auto  p-8">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white/90 text-center mb-6">
+    <div className="py-10 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-white/90 text-center mb-8">
           Contact Information
         </h2>
-        <ul className="space-y-4 flex flex-col items-center">
+        <ul className="space-y-6">
           {contactDetails.map(({ id, icon: Icon, text }) => (
-            <li key={id} className="flex items-center w-full max-w-sm">
-              <div className=" bg-blue-500/90 p-2 text-white rounded-full">
-                <Icon size={26} className=" md:text-2xl lg:text-3xl" />
+            <li
+              key={id}
+              className="flex items-start sm:items-center gap-4 w-full"
+            >
+              <div className="flex-shrink-0 bg-blue-500/90 p-3 rounded-full text-white">
+                {/* Responsive icon sizes */}
+                <Icon size={10} />
               </div>
-              <span className="ml-4 text-gray-700 dark:text-white/70 font-medium">
+              <span className="text-gray-700 dark:text-white/70 font-medium break-words">
                 {text}
               </span>
             </li>

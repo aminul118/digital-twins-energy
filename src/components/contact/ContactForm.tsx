@@ -32,9 +32,7 @@ const ContactForm: React.FC = () => {
     setLoading(true);
     try {
       // Send form data to the backend using Axios
-
       reset();
-
       Swal.fire({
         title: "Success!",
         text: "Message Sent Successfully!",
@@ -53,7 +51,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div data-aos="fade-left" className="max-w-lg w-full mx-auto sm:p-6 lg:p-8">
+    <div className="max-w-lg w-full mx-auto sm:p-6 lg:p-8">
       <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white/90">
         Contact Us
       </h2>

@@ -1,12 +1,15 @@
 import { TChildren } from "@/lib/types/types";
-import ResponsiveNavbar from "@/components/layouts/Navbar/Navbar";
+
 import Footer from "@/components/layouts/Footer/Footer";
+import DesktopNavbar from "@/components/layouts/Navbar/DesktopNavbar";
+import MobileNavbar from "@/components/layouts/Navbar/MobileNavbar";
 
 const MainLayout = ({ children }: TChildren) => {
   return (
     <>
-      <ResponsiveNavbar />
-      <main className="min-h-[calc(100vh-276px)] mt-[68px]">{children}</main>
+      <DesktopNavbar />
+      <MobileNavbar />
+      <main className="min-h-[calc(100vh-276px)] mt-[68px] ">{children}</main>
       <Footer />
     </>
   );
