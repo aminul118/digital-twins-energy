@@ -6,13 +6,13 @@ import ContactUs from "@/components/contact/ContactUs";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <OurSolutions />
       <WhyDigitalTwin />
       <FAQ />
       <ContactUs />
-    </>
+    </div>
   );
 };
 
