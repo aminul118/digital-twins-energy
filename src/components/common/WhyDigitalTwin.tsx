@@ -28,7 +28,7 @@ const features = [
 
 const WhyDigitalTwin = () => {
   return (
-    <div className="relative bg-[url('/assets/background/bg-solar.png')] bg-cover bg-center md:bg-fixed min-h-[550px] py-16 md:py-24 px-4 sm:px-6">
+    <div className="relative bg-[url('/assets/background/bg-solar.png')] bg-cover bg-center md:bg-fixed min-h-[550px] py-16 md:py-24 2xl:py-44 px-4 sm:px-6">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
 

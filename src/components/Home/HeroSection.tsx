@@ -1,25 +1,26 @@
 import { Flame, Sun } from "lucide-react";
 import TypeWritter from "./TypeWritter";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white dark:bg-slate-900 rounded-md relative overflow-hidden">
+    <section className="bg-white dark:bg-slate-900 rounded-md relative ">
       <div className="container mx-auto py-6 px-4">
         {/* header */}
         <header className="flex flex-col lg:flex-row items-center justify-between gap-12 mt-10">
           <div className="w-full lg:w-[45%]">
             <TypeWritter />
           </div>
-
-          <div className="w-full lg:w-[55%]">
-            <img
-              src="https://i.ibb.co/syHFhNy/image.png"
-              alt="image"
-              className="w-full h-auto object-contain"
+          <div>
+            <Image
+              src="/assets/image/solar.png"
+              alt="image of Solar and gas line "
+              height={400}
+              width={800}
+              className="object-cover"
             />
           </div>
         </header>
-
         {/* Services */}
         <div className="pb-[30px] mt-8">
           <h1 className="text-xl font-semibold">Our Service</h1>
