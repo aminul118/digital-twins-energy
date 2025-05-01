@@ -5,7 +5,12 @@ import SectionTitle from "../ui/SectionTitle";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="relative px-4 sm:px-6 lg:px-12 py-6 lg:py-12 2xl:py-24 bg-cover bg-center bg-[url('/assets/background/contact.jpg')] dark:bg-none dark:bg-slate-900">
+    <div
+      className="relative min-h-[calc(100vh-276px)] mt-[68px] px-4 sm:px-6 lg:px-12 py-6 lg:py-12 2xl:py-24 
+                    bg-cover bg-center 
+                    bg-[url('/assets/background/contact.jpg')] 
+                    dark:bg-none dark:bg-slate-900"
+    >
       {/* Top White Gradient Overlay (only in light mode) */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent z-[1] dark:hidden" />
 
