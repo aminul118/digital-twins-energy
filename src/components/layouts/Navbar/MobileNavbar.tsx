@@ -70,7 +70,7 @@ const MobileNavbar = () => {
             onClick={() => setIsMegaMenuCollapse(!isMegaMenuCollapse)}
             className="cursor-pointer flex justify-between items-center"
           >
-            Products
+            Services
             <IoIosArrowDown
               className={`transition-transform ${
                 isMegaMenuCollapse ? "rotate-180" : ""
@@ -102,15 +102,9 @@ const MobileNavbar = () => {
               ))}
             </ul>
           )}
-
           <li>
-            <Link href="/features" onClick={() => setMobileSidebarOpen(false)}>
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link href="/support" onClick={() => setMobileSidebarOpen(false)}>
-              Support
+            <Link href="/vision" onClick={() => setMobileSidebarOpen(false)}>
+              Vision
             </Link>
           </li>
           <li>
