@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Home, Info, PhoneCall, Settings2, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Toggle";
+import Logo from "./Logo";
 
 const navItems = [
   { name: "Home", href: "/", icon: Home },
@@ -17,12 +18,7 @@ const DesktopNavbar = () => {
     <header className="hidden md:block w-full bg-slate-900 fixed z-50 py-2 top-0">
       <nav className="relative container mx-auto shadow">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
-          <Link href="/" passHref>
-            <div className="flex items-center gap-3">
-              <p className="text-2xl font-semibold text-white">Point</p>
-            </div>
-          </Link>
-
+          <Logo />
           <ul className="flex items-center gap-6 text-[1rem]">
             {navItems.map(({ name, href, icon: Icon }) => (
               <li key={name}>

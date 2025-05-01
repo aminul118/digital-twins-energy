@@ -11,6 +11,7 @@ import {
   Target,
   PhoneCall,
 } from "lucide-react";
+import Logo from "./Logo";
 
 const navLinks = [
   { name: "Home", href: "/", icon: Home },
@@ -40,9 +41,7 @@ const MobileNavbar = () => {
   return (
     <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-slate-900 py-2">
       <nav className="container mx-auto flex justify-between items-center px-4 py-2">
-        <Link href="/">
-          <p className="text-2xl font-semibold text-white">Point</p>
-        </Link>
+        <Logo />
 
         <Menu
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}

@@ -1,3 +1,5 @@
+import { Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -6,7 +8,20 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo and Description */}
         <div>
-          <p className="text-sm leading-relaxed">
+          <Link href="/" passHref>
+            <div className="flex  flex-col gap-3">
+              <Image
+                src="/logo.svg"
+                alt="Digital Twin Energy LLC logo"
+                width={96}
+                height={96}
+              />
+              <p className="text-2xl font-semibold text-white">
+                Twin Energy LLC.
+              </p>
+            </div>
+          </Link>
+          <p className="text-sm leading-relaxed mt-6">
             Bringing you the best solutions for your business. <br />
             Connect with us for a seamless experience.
           </p>
@@ -25,28 +40,36 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/about"
                 className="hover:text-white transition-colors duration-200"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="hover:text-white transition-colors duration-200"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                href="/vision"
+                className="hover:text-white transition-colors duration-200"
+              >
+                Vision
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/contact"
                 className="hover:text-white transition-colors duration-200"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -55,27 +78,27 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold text-white mb-4">Contact Us</h2>
           <ul className="space-y-3 text-sm">
-            <li>
-              <span className="block">Email:</span>
+            <li className="flex items-center  gap-2">
+              <Mail />
               <a
-                href="mailto:info@example.com"
+                href="mailto:info@digitaltwinsenergy.com"
                 className="hover:text-white transition-colors duration-200 block"
               >
                 info@example.com
               </a>
             </li>
-            <li>
-              <span className="block">Phone:</span>
+            <li className="flex items-center  gap-2">
+              <Phone />
               <a
-                href="tel:+1234567890"
+                href="tel:(+1) 695-592-6659"
                 className="hover:text-white transition-colors duration-200 block"
               >
                 +1 234 567 890
               </a>
             </li>
-            <li>
-              <span className="block">Address:</span>
-              <span>1234 Street Name, City, Country</span>
+            <li className="flex items-center  gap-2">
+              <MapPin />
+              <span>2319 Greenfield Pkwy Austin, TX 78741</span>
             </li>
           </ul>
         </div>

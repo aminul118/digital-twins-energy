@@ -18,7 +18,7 @@ export const metadata: Metadata = generateMetaTags({
 
 const ServicesPage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <SectionBanner
         backgroundImagePath="/assets/background/blue-gradiant-solar.png"
         heading="Services"
@@ -27,7 +27,7 @@ const ServicesPage = () => {
         className="text-white"
       />
       <Services />
-    </div>
+    </>
   );
 };
 
