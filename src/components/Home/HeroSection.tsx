@@ -13,6 +13,8 @@ const HeroSection = () => {
           </div>
           <div>
             <Image
+              data-aos="fade-up"
+              data-aos-duration="3000"
               src="/assets/image/solar.png"
               alt="image of Solar and gas line "
               height={400}

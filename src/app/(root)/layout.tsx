@@ -1,10 +1,9 @@
-import { TChildren } from "@/lib/types/types";
-
+import { Children } from "@/lib/types/types";
 import Footer from "@/components/layouts/Footer/Footer";
 import DesktopNavbar from "@/components/layouts/Navbar/DesktopNavbar";
 import MobileNavbar from "@/components/layouts/Navbar/MobileNavbar";
 
-const MainLayout = ({ children }: TChildren) => {
+const MainLayout = ({ children }: Children) => {
   return (
     <>
       <DesktopNavbar />

@@ -17,24 +17,25 @@ const Blog = () => {
             <div
               data-aos="fade-up"
               key={id}
-              className=" bg-slate-100 dark:bg-slate-900 overflow-hidden group cursor-pointer"
+              className=" bg-slate-100 dark:bg-slate-900 overflow-hidden group cursor-pointer flex flex-col justify-between"
             >
-              {/* Image Container with Zoom Effect */}
-              <div className="overflow-hidden">
-                <Image
-                  src={image}
-                  alt={heading}
-                  width={600}
-                  height={400}
-                  className="w-full h-64 lg:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+              <div>
+                {/* Image Container with Zoom Effect */}
+                <div className="overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={heading}
+                    width={600}
+                    height={400}
+                    className="w-full h-64 lg:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-              <div className="p-5">
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white/90 mb-4">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white/90 mb-4 px-5 pt-5">
                   {heading}
                 </h2>
-
+              </div>
+              <div className="px-5 pb-5">
                 <Button variant="destructive" className="rounded-none">
                   <Link href={`/blog/${id}`}>READ MORE</Link>
                 </Button>

@@ -31,7 +31,7 @@ const BlogDetailsPage = async ({ params }: Params) => {
         {details?.map((paragraph, index) => (
           <p
             key={index}
-            className="text-lg text-gray-700 dark:text-white/80 lg:text-justify"
+            className=" text-gray-700 dark:text-white/80 lg:text-justify"
           >
             {paragraph}
           </p>

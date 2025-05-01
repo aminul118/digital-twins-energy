@@ -1,4 +1,4 @@
-export type TChildren = Readonly<{
+export type Children = Readonly<{
   children: React.ReactNode;
 }>;
 

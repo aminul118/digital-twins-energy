@@ -2,7 +2,7 @@ import ContactUs from "@/components/contact/ContactUs";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <ContactUs />
     </div>
   );
