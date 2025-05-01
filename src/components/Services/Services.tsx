@@ -9,6 +9,8 @@ const Services = () => {
         {servicesData?.map((item) => {
           return (
             <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
               key={item.id}
               className="bg-slate-100 dark:bg-slate-900 overflow-hidden group cursor-pointer flex flex-col justify-between"
             >

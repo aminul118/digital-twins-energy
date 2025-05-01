@@ -5,6 +5,13 @@ export type Children = Readonly<{
 export type Params = {
   params: Promise<{ id: string }>;
 };
+export type MetaProps = {
+  title: string;
+  description: string;
+  keywords: string;
+  image?: string;
+  url?: string;
+};
 
 export type Blog = {
   id: number;
