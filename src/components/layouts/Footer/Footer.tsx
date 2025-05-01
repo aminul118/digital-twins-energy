@@ -106,7 +106,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Digital Twin Technolog. All rights
+        &copy; {new Date().getFullYear()} Digital Twin Energy LLC. All rights
         reserved.
       </div>
     </footer>
