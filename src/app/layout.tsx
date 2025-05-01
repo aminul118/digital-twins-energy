@@ -4,18 +4,65 @@ import { Children } from "@/lib/types/types";
 import { poppins } from "@/lib/fonts";
 import { ThemeProvider } from "../providers/ThemeProvider";
 import AosProvider from "../providers/AosProvider";
-import { generateMetaTags } from "@/lib/seo/genarateMetaTags";
 
-// --> SEO Starts
-export const metadata: Metadata = generateMetaTags({
-  title: "Digital Twin Energy LLC - AI-Driven Energy Optimization Solutions",
-  description:
-    "Digital Twin Energy LLC specializes in AI-driven optimization strategies for energy production systems across solar, wind, and oil & gas sectors. Founded and led by Mr. Saikot, we are redefining smart energy innovation.",
-  keywords:
-    "Digital Twin Energy, AI energy optimization, renewable energy AI, solar energy optimization, wind energy solutions, oil and gas AI, energy production technology, energy efficiency, smart energy solutions, Mr. Saikot, clean energy AI, digital energy systems",
-  url: "https://www.digitaltwinsenergy.com",
-});
-// --> SEO End
+/**
+ *--------->> SEO
+ */
+
+const image = "/social-share-bg.png";
+const title =
+  "Digital Twin Energy LLC - AI-Driven Energy Optimization Solutions";
+const description =
+  "Discover Digital Twin Energy LLC's cutting-edge AI-driven energy optimization solutions, empowering industries with smarter, more sustainable energy strategies for the future.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  keywords: [
+    "AI energy optimization solutions",
+    "sustainable energy strategies",
+    "Digital Twin Energy LLC",
+    "energy management solutions",
+    "AI-powered energy efficiency",
+    "energy optimization technologies",
+    "energy solutions for industries",
+    "smart energy systems",
+    "AI-driven energy services",
+    "future of energy optimization",
+  ],
+  category: "AI Energy Solutions",
+  openGraph: {
+    type: "website",
+    url: "https://www.digitaltwinsenergy.com",
+    title,
+    description,
+    siteName: "Digital Twin Energy LLC",
+    images: [{ url: image }],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@DigitalTwinEnergy",
+    creator: "@DigitalTwinEnergy",
+    images: image,
+    description,
+    title,
+  },
+  robots: { index: true, follow: true },
+  applicationName: "Digital Twin Energy LLC",
+  facebook: { appId: "580317868506376" },
+  authors: [
+    {
+      name: "Mr. MD Saifur Rahman Saikot",
+    },
+  ],
+
+  themeColor: "#ffffff",
+};
+
+/**
+ *--------->> SEO END
+ */
 
 const RootLayout = ({ children }: Children) => {
   return (
