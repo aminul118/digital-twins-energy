@@ -1,17 +1,28 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { IoIosArrowDown } from "react-icons/io";
-
-import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
 import { ModeToggle } from "./Toggle";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Info,
+  Settings2,
+  Target,
+  PhoneCall,
+} from "lucide-react";
+
+const navLinks = [
+  { name: "Home", href: "/", icon: Home },
+  { name: "About", href: "/about", icon: Info },
+  { name: "Services", href: "/services", icon: Settings2 },
+  { name: "Vision", href: "/vision", icon: Target },
+  { name: "Contact", href: "/contact", icon: PhoneCall },
+];
 
 const MobileNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [isMegaMenuCollapse, setIsMegaMenuCollapse] = useState(false);
 
-  // Close sidebar on Escape key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -22,13 +33,12 @@ const MobileNavbar = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Prevent background scroll
   useEffect(() => {
     document.body.style.overflow = mobileSidebarOpen ? "hidden" : "auto";
   }, [mobileSidebarOpen]);
 
   return (
-    <header className=" md:hidden fixed top-0 left-0 right-0 z-50 bg-slate-900 py-2">
+    <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-slate-900 py-2">
       <nav className="container mx-auto flex justify-between items-center px-4 py-2">
         <Link href="/">
           <p className="text-2xl font-semibold text-white">Point</p>
@@ -54,64 +64,23 @@ const MobileNavbar = () => {
             <X />
           </button>
         </div>
+
         <ul className="flex flex-col p-6 gap-4 text-gray-700 dark:text-white/80">
-          <li>
-            <Link href="/" onClick={() => setMobileSidebarOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" onClick={() => setMobileSidebarOpen(false)}>
-              About
-            </Link>
-          </li>
-
-          <li
-            onClick={() => setIsMegaMenuCollapse(!isMegaMenuCollapse)}
-            className="cursor-pointer flex justify-between items-center"
-          >
-            Services
-            <IoIosArrowDown
-              className={`transition-transform ${
-                isMegaMenuCollapse ? "rotate-180" : ""
-              }`}
-            />
-          </li>
-
-          {isMegaMenuCollapse && (
-            <ul className="ml-4 flex flex-col gap-2 text-sm text-gray-600 dark:text-white/80 ">
-              {moreProducts.map((product, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={product.link}
-                    onClick={() => setMobileSidebarOpen(false)}
-                  >
-                    {product.title}
-                  </Link>
-                </li>
-              ))}
-              {ecoSystem.map((eco, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={eco.link}
-                    onClick={() => setMobileSidebarOpen(false)}
-                  >
-                    {eco.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-          <li>
-            <Link href="/vision" onClick={() => setMobileSidebarOpen(false)}>
-              Vision
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" onClick={() => setMobileSidebarOpen(false)}>
-              Contact
-            </Link>
-          </li>
+          {navLinks.map((link, idx) => {
+            const Icon = link.icon;
+            return (
+              <li key={idx}>
+                <Link
+                  href={link.href}
+                  onClick={() => setMobileSidebarOpen(false)}
+                  className="flex items-center gap-2"
+                >
+                  <Icon className="w-5 h-5" />
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
           <li>
             <ModeToggle />
           </li>

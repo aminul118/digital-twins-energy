@@ -8,7 +8,9 @@ const MainLayout = ({ children }: Children) => {
     <>
       <DesktopNavbar />
       <MobileNavbar />
-      <main className="min-h-[calc(100vh-276px)] mt-[68px] ">{children}</main>
+      <main className="min-h-[calc(100vh-276px)] mt-[63px] lg:mt-[68px] ">
+        {children}
+      </main>
       <Footer />
     </>
   );

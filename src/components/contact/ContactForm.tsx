@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-lg w-full mx-auto sm:p-6 lg:p-8">
+    <div className="max-w-lg w-full mx-auto lg:p-8">
       <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white/90">
         Contact Us
       </h2>

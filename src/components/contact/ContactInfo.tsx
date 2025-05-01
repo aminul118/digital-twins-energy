@@ -1,20 +1,20 @@
 import React from "react";
-import { FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from "react-icons/fa";
 
 const contactDetails = [
-  { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
-  // { id: 2, icon: FaEnvelope, text: "info@digitaltwinsenergy.com" },
+  { id: 1, icon: FaPhone, text: "(+1) 695-592-6659" },
+  { id: 2, icon: FaEnvelope, text: " info@digitaltwinsenergy.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,
-    text: "2261 Market Street STE 5926, San Francisco, CA, United State, 94114",
+    text: "2319 Greenfield Pkwy Austin, TX 78741 ",
   },
   { id: 4, icon: FaClock, text: "Mon - Sat : 9:00 AM - 6:00 PM" },
 ];
 
 const ContactInfo = () => {
   return (
-    <div data-aos="fade-right" className="py-10 px-4 sm:px-6 lg:px-12">
+    <div data-aos="fade-right" className="py-10 ">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white/90 text-center mb-8">
           Contact Information
