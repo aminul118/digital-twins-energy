@@ -16,3 +16,10 @@ export type Blog = {
     content: string[];
   }[];
 };
+
+export type Services = {
+  id: number;
+  service: string;
+  image: string;
+  details: string[];
+};
