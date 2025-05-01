@@ -1,4 +1,3 @@
-import Container from "@/components/ui/Container";
 import blogPosts from "@/lib/constant/blogPosts";
 import { Params } from "@/lib/types/types";
 import Image from "next/image";
@@ -17,7 +16,7 @@ const BlogDetailsPage = async ({ params }: Params) => {
   const { heading, image, details, newsSection } = blog;
 
   return (
-    <Container className="p-6  mx-auto space-y-6">
+    <section className="p-6 max-w-5xl mx-auto  space-y-6">
       <Image
         src={image}
         alt={heading}
@@ -57,7 +56,7 @@ const BlogDetailsPage = async ({ params }: Params) => {
           </div>
         ))}
       </div>
-    </Container>
+    </section>
   );
 };
 
