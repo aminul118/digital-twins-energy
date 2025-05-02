@@ -9,7 +9,7 @@ import AosProvider from "../providers/AosProvider";
  *--------->> SEO
  */
 
-const image = "/social-share-bg.png";
+const image = "/assets/image/seo/solar.png";
 const title =
   "Digital Twin Energy LLC - AI-Driven Energy Optimization Solutions";
 const description =
