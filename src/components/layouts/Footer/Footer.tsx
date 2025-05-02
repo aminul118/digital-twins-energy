@@ -84,7 +84,7 @@ const Footer = () => {
                 href="mailto:info@digitaltwinsenergy.com"
                 className="hover:text-white transition-colors duration-200 block"
               >
-                info@example.com
+                info@digitaltwinsenergy.com
               </a>
             </li>
             <li className="flex items-center  gap-2">
@@ -93,7 +93,7 @@ const Footer = () => {
                 href="tel:(+1) 695-592-6659"
                 className="hover:text-white transition-colors duration-200 block"
               >
-                +1 234 567 890
+                (+1) 695-592-6659
               </a>
             </li>
             <li className="flex items-center  gap-2">
