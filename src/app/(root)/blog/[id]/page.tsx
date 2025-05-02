@@ -36,7 +36,7 @@ const BlogDetailsPage = async ({ params }: Params) => {
   const { heading, image, details, newsSection } = blog;
 
   return (
-    <section className="p-6 max-w-5xl mx-auto space-y-6">
+    <section className="px-2 lg:px-6 py-12 max-w-5xl mx-auto space-y-6">
       <Image
         src={image}
         alt={heading}
