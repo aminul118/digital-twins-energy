@@ -34,14 +34,12 @@ const DesktopNavbar = () => {
 
           <div className="flex items-center gap-4">
             <ModeToggle />
-            <Button variant="destructive">
-              <Link href="/contact">
-                <div className="flex items-center gap-2 text-white">
-                  <PhoneCall className="text-[1.2rem]" />
-                  Contact
-                </div>
-              </Link>
-            </Button>
+            <Link href="/contact">
+              <Button variant="destructive">
+                <PhoneCall className="text-[1.2rem]" />
+                Contact
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>
