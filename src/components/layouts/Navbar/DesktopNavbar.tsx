@@ -15,7 +15,7 @@ const navItems = [
 
 const DesktopNavbar = () => {
   return (
-    <header className="hidden md:block w-full bg-slate-900 fixed z-50 py-2 top-0">
+    <header className="hidden md:block w-full bg-background dark:bg-slate-900 fixed z-50 py-2 top-0">
       <nav className="relative container mx-auto ">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Logo />
@@ -23,7 +23,7 @@ const DesktopNavbar = () => {
             {navItems.map(({ name, href, icon: Icon }) => (
               <li key={name}>
                 <Link href={href}>
-                  <div className="flex items-center gap-2 hover:text-blue-500 text-white">
+                  <div className="flex items-center gap-2 hover:text-blue-500 dark:text-white">
                     <Icon className="text-[1.2rem]" />
                     {name}
                   </div>

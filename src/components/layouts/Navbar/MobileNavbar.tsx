@@ -39,13 +39,13 @@ const MobileNavbar = () => {
   }, [mobileSidebarOpen]);
 
   return (
-    <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-slate-900 py-2">
+    <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-background dark:bg-slate-900  py-2">
       <nav className="container mx-auto flex justify-between items-center px-4 py-2">
         <Logo />
 
         <Menu
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
-          className="text-[2rem] cursor-pointer text-white"
+          className="text-[2rem] cursor-pointer dark:text-white"
         />
       </nav>
 
