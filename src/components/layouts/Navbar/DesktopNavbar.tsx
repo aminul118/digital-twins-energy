@@ -16,7 +16,7 @@ const navItems = [
 const DesktopNavbar = () => {
   return (
     <header className="hidden md:block w-full bg-slate-900 fixed z-50 py-2 top-0">
-      <nav className="relative container mx-auto shadow">
+      <nav className="relative container mx-auto ">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Logo />
           <ul className="flex items-center gap-6 text-[1rem]">
