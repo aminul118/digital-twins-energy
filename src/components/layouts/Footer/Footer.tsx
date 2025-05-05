@@ -17,7 +17,7 @@ const Footer = () => {
                 height={96}
               />
               <p className="text-2xl font-semibold text-white">
-                Digital Twins Energy LLC.
+                Digital Twins Energy
               </p>
             </div>
           </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Digital Twins Energy LLC. All rights
+        &copy; {new Date().getFullYear()} Digital Twins Energy. All rights
         reserved.
       </div>
     </footer>

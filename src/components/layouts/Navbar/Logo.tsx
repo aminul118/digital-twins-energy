@@ -22,7 +22,7 @@ const Logo = () => {
         />
 
         <p className="text-xl lg:text-2xl font-semibold dark:text-white">
-          Digital Twins Energy LLC.
+          Digital Twins Energy
         </p>
       </div>
     </Link>
