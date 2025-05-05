@@ -8,21 +8,21 @@ const Logo = () => {
       <div className="flex items-center gap-3">
         <Image
           src="/logo.svg"
-          alt="Digital Twin Energy LLC logo"
+          alt="Digital Twins Energy LLC logo"
           width={36}
           height={36}
           className="hidden dark:block"
         />
         <Image
           src="/logo2.svg"
-          alt="Digital Twin Energy LLC logo"
+          alt="Digital Twins Energy LLC logo"
           width={36}
           height={36}
           className="block dark:hidden"
         />
 
-        <p className="text-2xl font-semibold dark:text-white">
-          Twin Energy LLC.
+        <p className="text-xl lg:text-2xl font-semibold dark:text-white">
+          Digital Twins Energy LLC.
         </p>
       </div>
     </Link>
