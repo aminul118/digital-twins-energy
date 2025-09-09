@@ -1,51 +1,19 @@
-import type { MetadataRoute } from "next";
+import metaConfig from "@/config/seo.config";
+import { staticRoutes } from "@/seo/staticRoutes";
+import { Routes } from "@/types";
+import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.digitaltwinsenergy.com";
-  const lastModified = new Date();
+const generateSitemapEntries = (routes: Routes[]): MetadataRoute.Sitemap => {
+  return routes.map((route) => ({
+    url: `${metaConfig.baseUrl}/${route?.url}`.replace(/\/+$/, ""),
+    lastModified: new Date(),
+    changeFrequency: route?.changeFrequency,
+    priority: route?.priority,
+  }));
+};
 
-  return [
-    {
-      url: `${baseUrl}`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/vision`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/1`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/2`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
-}
+const sitemap = (): MetadataRoute.Sitemap => {
+  return [...generateSitemapEntries(staticRoutes)];
+};
+
+export default sitemap;

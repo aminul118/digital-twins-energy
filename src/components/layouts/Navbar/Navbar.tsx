@@ -4,7 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Link from "next/link";
-import { ecoSystem, moreProducts } from "@/lib/constant/navMenu";
+import { ecoSystem, moreProducts } from "@/constant/navMenu";
 import { Button } from "@/components/ui/button";
 import { Home, Info, PhoneCall, Settings2, Target } from "lucide-react";
 import { ModeToggle } from "./Toggle";
