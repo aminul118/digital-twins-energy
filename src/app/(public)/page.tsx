@@ -5,7 +5,6 @@ import FAQ from "@/components/modules/Home/FAQ";
 import HeroSection from "@/components/modules/Home/HeroSection";
 import OurSolutions from "@/components/modules/Home/OurSolution";
 import generateMetaTags from "@/seo/generateMetaTags";
-
 import { Metadata } from "next";
 
 // --> SEO Starts
@@ -20,14 +19,14 @@ export const metadata: Metadata = generateMetaTags({
 
 const HomePage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <HeroSection />
       <OurSolutions />
       <AboutCompany />
       <WhyDigitalTwin />
       <Blog />
       <FAQ />
-    </div>
+    </>
   );
 };
 

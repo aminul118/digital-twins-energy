@@ -1,6 +1,7 @@
 import { Flame, Sun } from "lucide-react";
 import TypeWritter from "./TypeWritter";
 import Image from "next/image";
+import images from "@/constant/images";
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
             <Image
               data-aos="fade-up"
               data-aos-duration="3000"
-              src="/assets/image/solar.png"
+              src={images.solar.solar}
               alt="image of Solar and gas line "
               height={400}
               width={800}

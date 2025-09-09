@@ -1,5 +1,4 @@
 import blogPosts from "@/constant/blogPosts";
-import { Params } from "@/lib/types/types";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { IParams } from "@/types";
 import Image from "next/image";

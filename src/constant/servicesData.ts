@@ -1,10 +1,10 @@
-import { Services } from "../lib/types/types";
+import images from "./images";
 
-const servicesData: Services[] = [
+const servicesData = [
   {
     id: 1,
     service: "AI-Driven System Optimization",
-    image: "/assets/image/services/a1.webp",
+    image: images.services.a1,
     details: [
       "Real-time adjustment of system parameters (e.g., production schedules, equipment settings).",
       "Enhanced resource utilization and minimized energy loss.",
@@ -14,7 +14,7 @@ const servicesData: Services[] = [
   {
     id: 2,
     service: "Digital Twin Simulation & Modeling",
-    image: "/assets/image/services/twin.webp",
+    image: images.services.twin,
     details: [
       "High-fidelity digital replicas of physical energy systems.",
       "Used for simulation, prediction, and optimization.",
@@ -24,7 +24,7 @@ const servicesData: Services[] = [
   {
     id: 3,
     service: "Reinforcement Learning Integration",
-    image: "/assets/image/services/reinforcement.webp",
+    image: images.services.reinforcement,
     details: [
       "Adaptive learning systems that self-improve over time.",
       "Automates decision-making for maximum energy efficiency.",
@@ -34,7 +34,7 @@ const servicesData: Services[] = [
   {
     id: 4,
     service: "Predictive Maintenance Services",
-    image: "/assets/image/services/predictive.webp",
+    image: images.services.predictive,
     details: [
       "Uses ML to forecast equipment failures before they happen.",
       "Includes sensor integration and maintenance scheduling.",
@@ -44,7 +44,7 @@ const servicesData: Services[] = [
   {
     id: 5,
     service: "Real-Time Performance Monitoring",
-    image: "/assets/image/services/performance-monitoring.webp",
+    image: images.services.performance_monitoring,
     details: [
       "Dashboards with live analytics and alerts.",
       "Detect inefficiencies and energy waste instantly.",
@@ -54,7 +54,7 @@ const servicesData: Services[] = [
   {
     id: 6,
     service: "Energy Forecasting & Grid Integration",
-    image: "/assets/image/services/grid-intregation.jpg",
+    image: images.services.grid_integration,
     details: [
       "Accurate energy output predictions using historical, weather, and system data.",
       "Helps clients optimize grid participation and energy trading.",
@@ -64,7 +64,7 @@ const servicesData: Services[] = [
   {
     id: 7,
     service: "Solar Solutions for Disadvantaged Communities",
-    image: "/assets/image/services/solution.png",
+    image: images.services.solution,
     details: [
       "Affordable solar system implementation.",
       "Partnerships with nonprofits and local governments.",
@@ -74,7 +74,7 @@ const servicesData: Services[] = [
   {
     id: 8,
     service: "Green Energy Education & Outreach",
-    image: "/assets/image/services/green-energy.jpg",
+    image: images.services.green_energy,
     details: [
       "Community-based workshops and webinars.",
       "Online resources about energy savings and solar benefits.",
@@ -84,7 +84,7 @@ const servicesData: Services[] = [
   {
     id: 9,
     service: "Custom AI Model Development",
-    image: "/assets/image/services/custom-ai.jpeg",
+    image: images.services.custom_a1,
     details: [
       "Tailored ML algorithms based on client data.",
       "Optimization for specific goals (e.g., emissions reduction, cost cutting).",
@@ -93,7 +93,7 @@ const servicesData: Services[] = [
   {
     id: 10,
     service: "Energy Infrastructure Consulting",
-    image: "/assets/image/services/green-energy.jpg",
+    image: images.services.green_energy,
     details: [
       "Guidance for upgrading legacy systems.",
       "Feasibility studies and ROI modeling.",

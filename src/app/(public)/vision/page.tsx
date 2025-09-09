@@ -18,7 +18,7 @@ export const metadata: Metadata = generateMetaTags({
 // --> SEO End
 const VisionPage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <SectionBanner
         backgroundImagePath="/assets/background/blue-gradiant.png"
         heading="Our Vision"
@@ -28,7 +28,7 @@ const VisionPage = () => {
       />
       <VisionStateMent />
       <StrategicPillars />
-    </div>
+    </>
   );
 };
 

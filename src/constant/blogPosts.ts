@@ -1,6 +1,4 @@
-import { Blog } from "../lib/types/types";
-
-const blogPosts: Blog[] = [
+const blogPosts = [
   {
     id: 1,
     heading:

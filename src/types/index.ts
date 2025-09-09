@@ -1,11 +1,11 @@
-export type { MetaProps, Routes } from './meta.types';
+export type { MetaProps, Routes } from "./meta.types";
 export type {
   DivProps,
   IChildren,
   IGlobalError,
   IParams,
   SectionProps,
-} from './react.types';
+} from "./react.types";
 
 export interface ApiResponse<T> {
   message: string;
@@ -13,3 +13,14 @@ export interface ApiResponse<T> {
   success: boolean;
   data: T;
 }
+
+export type Blog = {
+  id: number;
+  heading: string;
+  image: string;
+  details: string[];
+  newsSection: {
+    heading: string;
+    content: string[];
+  }[];
+};

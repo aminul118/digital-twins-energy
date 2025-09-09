@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Leaf, Home } from "lucide-react";
 import Container from "../ui/Container";
+import images from "@/constant/images";
 
 const imageSources = [
-  { src: "/assets/image/about/about-1.png", alt: "Solar Workers" },
-  { src: "/assets/image/about/about-2.png", alt: "Solar Field" },
-  { src: "/assets/image/about/about-3.png", alt: "Solar House" },
-  { src: "/assets/image/about/about-4.png", alt: "Solar Panel" },
+  { src: images.about.about1, alt: "Solar Workers" },
+  { src: images.about.about2, alt: "Solar Field" },
+  { src: images.about.about3, alt: "Solar House" },
+  { src: images.about.about4, alt: "Solar Panel" },
 ];
 
 const features = [
