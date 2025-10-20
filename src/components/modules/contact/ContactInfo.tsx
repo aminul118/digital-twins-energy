@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from "react-icons/fa";
 
 const contactDetails = [
-  { id: 1, icon: FaPhone, text: "(+1) 695-592-6659" },
+  { id: 1, icon: FaPhone, text: "(+1) 605-592-6659" },
   { id: 2, icon: FaEnvelope, text: " info@digitaltwinsenergy.com" },
   {
     id: 3,
