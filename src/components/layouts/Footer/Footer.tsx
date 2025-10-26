@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import FooterCopyright from "./FooterCopyright";
 
 const Footer = () => {
   return (
@@ -104,11 +106,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Digital Twins Energy. All rights
-        reserved.
-      </div>
+      <FooterCopyright />
     </footer>
   );
 };
