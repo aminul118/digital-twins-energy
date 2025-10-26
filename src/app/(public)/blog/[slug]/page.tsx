@@ -2,26 +2,6 @@ import blogPosts from "@/constant/blogPosts";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { IParams } from "@/types";
 import Image from "next/image";
-import React from "react";
-
-// ------> SEO Starts
-export async function generateMetadata({ params }: IParams) {
-  const { slug } = await params;
-
-  // Fetch the blog based on the id
-  const blog = blogPosts.find((blog) => blog.id === Number(slug));
-
-  if (blog) {
-    return generateMetaTags({
-      title: blog.heading,
-      description: `${blog?.details?.slice(0, 1)}`,
-      keywords: `Digital Twin Energy LLC, blog on ${blog.heading}`,
-      image: blog.image,
-      websitePath: `/blog/${slug}`,
-    });
-  }
-}
-// ------> SEO TAG END
 
 const BlogDetailsPage = async ({ params }: IParams) => {
   const { slug } = await params;
@@ -81,3 +61,22 @@ const BlogDetailsPage = async ({ params }: IParams) => {
 };
 
 export default BlogDetailsPage;
+
+// ------> SEO Starts
+export async function generateMetadata({ params }: IParams) {
+  const { slug } = await params;
+
+  // Fetch the blog based on the id
+  const blog = blogPosts.find((blog) => blog.id === Number(slug));
+
+  if (blog) {
+    return generateMetaTags({
+      title: blog.heading,
+      description: `${blog?.details?.slice(0, 1)}`,
+      keywords: `Digital Twin Energy LLC, blog on ${blog.heading}`,
+      image: blog.image,
+      websitePath: `/blog/${slug}`,
+    });
+  }
+}
+// ------> SEO TAG END

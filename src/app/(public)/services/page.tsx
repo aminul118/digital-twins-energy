@@ -1,21 +1,7 @@
 import Services from "@/components/modules/Services/Services";
 import SectionBanner from "@/components/ui/SectionBanner";
 import generateMetaTags from "@/seo/generateMetaTags";
-
 import { Metadata } from "next";
-
-// --> SEO Starts
-export const metadata: Metadata = generateMetaTags({
-  title:
-    "Services - Digital Twin Energy LLC | AI Optimization for Energy Systems",
-  description:
-    "Explore the services offered by Digital Twin Energy LLC, including AI-powered optimization solutions for solar, wind, and oil & gas energy systems. We deliver smarter, more efficient, and sustainable energy production strategies.",
-  keywords:
-    "AI energy services, energy optimization solutions, solar energy AI, wind energy technology, oil and gas optimization, renewable energy consulting, digital twin services, clean energy innovation, energy efficiency services, smart energy systems, Digital Twin Energy LLC services",
-  websitePath: "/services",
-});
-
-// --> SEO End
 
 const ServicesPage = () => {
   return (
@@ -33,3 +19,15 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
+// --> SEO Starts
+export const metadata: Metadata = generateMetaTags({
+  title:
+    "Services - Digital Twin Energy LLC | AI Optimization for Energy Systems",
+  description:
+    "Explore the services offered by Digital Twin Energy LLC, including AI-powered optimization solutions for solar, wind, and oil & gas energy systems. We deliver smarter, more efficient, and sustainable energy production strategies.",
+  keywords:
+    "AI energy services, energy optimization solutions, solar energy AI, wind energy technology, oil and gas optimization, renewable energy consulting, digital twin services, clean energy innovation, energy efficiency services, smart energy systems, Digital Twin Energy LLC services",
+  websitePath: "/services",
+});
+// --> SEO End

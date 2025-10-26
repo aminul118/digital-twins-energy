@@ -2,6 +2,16 @@ import ContactUs from "@/components/modules/contact/ContactUs";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";
 
+const ContactPage = () => {
+  return (
+    <>
+      <ContactUs />
+    </>
+  );
+};
+
+export default ContactPage;
+
 // --> SEO Starts
 export const metadata: Metadata = generateMetaTags({
   title:
@@ -13,13 +23,3 @@ export const metadata: Metadata = generateMetaTags({
   websitePath: "/contact",
 });
 // --> SEO End
-
-const ContactPage = () => {
-  return (
-    <>
-      <ContactUs />
-    </>
-  );
-};
-
-export default ContactPage;

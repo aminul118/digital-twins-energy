@@ -4,18 +4,6 @@ import SectionBanner from "@/components/ui/SectionBanner";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";
 
-// --> SEO Starts
-export const metadata: Metadata = generateMetaTags({
-  title:
-    "Our Vision - Digital Twin Energy LLC | Pioneering AI Energy Solutions",
-  description:
-    "Discover the vision of Digital Twin Energy LLC — transforming energy production through AI-driven digital twin technology for solar, wind, and oil & gas systems. Guided by innovation and sustainability.",
-  keywords:
-    "Digital Twin Energy vision, AI energy solutions, future of energy, clean energy innovation, renewable energy AI, digital twin strategy, energy optimization, sustainable energy future, solar and wind energy AI, oil and gas digital solutions, Mr. Saikot vision, AI in energy systems",
-  websitePath: "/vision",
-});
-
-// --> SEO End
 const VisionPage = () => {
   return (
     <>
@@ -33,3 +21,15 @@ const VisionPage = () => {
 };
 
 export default VisionPage;
+
+// --> SEO Starts
+export const metadata: Metadata = generateMetaTags({
+  title:
+    "Our Vision - Digital Twin Energy LLC | Pioneering AI Energy Solutions",
+  description:
+    "Discover the vision of Digital Twin Energy LLC — transforming energy production through AI-driven digital twin technology for solar, wind, and oil & gas systems. Guided by innovation and sustainability.",
+  keywords:
+    "Digital Twin Energy vision, AI energy solutions, future of energy, clean energy innovation, renewable energy AI, digital twin strategy, energy optimization, sustainable energy future, solar and wind energy AI, oil and gas digital solutions, Mr. Saikot vision, AI in energy systems",
+  websitePath: "/vision",
+});
+// --> SEO End
