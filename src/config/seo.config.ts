@@ -1,4 +1,6 @@
-const metaConfig = {
+import { MetaConfig } from "@/types";
+
+const metaConfig: MetaConfig = {
   baseUrl: "https://www.digitaltwinsenergy.com",
   baseImage: "/assets/image/seo/solar.png",
   site_name: "digitaltwinsenergy",
@@ -8,6 +10,7 @@ const metaConfig = {
   authors_name: "Saikot",
   authorPortfolio: "http://www.xyx.com/john-doe",
   twitter_site: "@digitaltwinsenergy",
+  protectedCrawlRoutes: ["/dashboard", "/admin"],
 };
 
 export default metaConfig;

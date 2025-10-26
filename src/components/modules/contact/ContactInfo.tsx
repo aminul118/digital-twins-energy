@@ -25,13 +25,11 @@ const ContactInfo = () => {
               key={id}
               className="flex items-start sm:items-center gap-4 w-full"
             >
-              <div className="flex-shrink-0 bg-blue-500/90 p-3 rounded-full text-white">
+              <div className=" bg-blue-500/90 p-3 rounded-full text-white">
                 {/* Responsive icon sizes */}
                 <Icon size={10} />
               </div>
-              <span className="text-gray-700 dark:text-white/70 break-words">
-                {text}
-              </span>
+              <span className="text-gray-700 dark:text-white/70">{text}</span>
             </li>
           ))}
         </ul>

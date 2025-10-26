@@ -1,12 +1,22 @@
+import metaConfig from "@/config/seo.config";
 import type { MetadataRoute } from "next";
 
-export default function robots(): MetadataRoute.Robots {
+const robots = (): MetadataRoute.Robots => {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: "/private/",
-    },
-    sitemap: "https://digitaltwinsenergy.com/sitemap.xml",
+    rules: [
+      {
+        userAgent: "Googlebot",
+        allow: ["/"],
+        disallow: metaConfig.protectedCrawlRoutes,
+      },
+      {
+        userAgent: ["Applebot", "Bingbot"],
+        allow: ["/"],
+        disallow: metaConfig.protectedCrawlRoutes,
+      },
+    ],
+    sitemap: [`${metaConfig.baseUrl}/sitemap.xml`],
   };
-}
+};
+
+export default robots;

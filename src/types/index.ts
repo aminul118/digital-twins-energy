@@ -1,4 +1,4 @@
-export type { MetaProps, Routes } from "./meta.types";
+export type { MetaProps, Routes, MetaConfig } from "./meta.types";
 export type {
   DivProps,
   IChildren,
