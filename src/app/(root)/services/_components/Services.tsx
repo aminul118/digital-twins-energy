@@ -1,6 +1,6 @@
-import servicesData from "@/constant/servicesData";
+import servicesData from "@/config/servicesData";
 import Image from "next/image";
-import Container from "../../ui/Container";
+import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const Services = () => {

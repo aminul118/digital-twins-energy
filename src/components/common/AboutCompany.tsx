@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Leaf, Home } from "lucide-react";
 import Container from "../ui/Container";
-import images from "@/constant/images";
+import images from "@/config/images";
 import ScrollReveal from "../ui/ScrollReveal";
 
 const imageSources = [

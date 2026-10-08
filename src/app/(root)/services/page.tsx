@@ -1,4 +1,4 @@
-import Services from "@/components/modules/Services/Services";
+import Services from "./_components/Services";
 import SectionBanner from "@/components/ui/SectionBanner";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";

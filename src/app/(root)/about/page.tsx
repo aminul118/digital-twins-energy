@@ -1,7 +1,7 @@
 import AboutCompany from "@/components/common/AboutCompany";
-import CoreValues from "@/components/modules/About/CoreValues";
-import Founder from "@/components/modules/About/Founder";
-import WhatWeDo from "@/components/modules/About/WhatWeDo";
+import CoreValues from "./_components/CoreValues";
+import Founder from "./_components/Founder";
+import WhatWeDo from "./_components/WhatWeDo";
 import SectionBanner from "@/components/ui/SectionBanner";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";

@@ -1,6 +1,6 @@
-import Footer from "@/components/layouts/Footer/Footer";
-import DesktopNavbar from "@/components/layouts/Navbar/DesktopNavbar";
-import MobileNavbar from "@/components/layouts/Navbar/MobileNavbar";
+import Footer from "./_components/layouts/Footer/Footer";
+import DesktopNavbar from "./_components/layouts/Navbar/DesktopNavbar";
+import MobileNavbar from "./_components/layouts/Navbar/MobileNavbar";
 import { Metadata } from "next";
 import { Children } from "@/types";
 import generateMetaTags from "@/seo/generateMetaTags";

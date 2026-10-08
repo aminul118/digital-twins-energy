@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ModeToggle } from "./Toggle";
 import { Menu, X, PhoneCall } from "lucide-react";
 import Logo from "./Logo";
-import { mainNavLinks } from "@/constant/navMenu";
+import { mainNavLinks } from "@/config/menus";
 import NavbarItem from "./NavbarItem";
 import { Button } from "@/components/ui/button";
 

@@ -1,5 +1,5 @@
-import StrategicPillars from "@/components/modules/Vision/StrategicPillars";
-import VisionStateMent from "@/components/modules/Vision/VisionStateMent";
+import StrategicPillars from "./_components/StrategicPillars";
+import VisionStateMent from "./_components/VisionStateMent";
 import SectionBanner from "@/components/ui/SectionBanner";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";

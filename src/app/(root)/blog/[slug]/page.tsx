@@ -1,4 +1,4 @@
-import blogPosts from "@/constant/blogPosts";
+import blogPosts from "@/config/blogPosts";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Params } from "@/types";
 import Image from "next/image";

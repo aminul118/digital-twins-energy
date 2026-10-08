@@ -1,4 +1,4 @@
-import metaConfig from '@/config/seo.config';
+import metaConfig from '@/config/meta.config';
 import { MetaProps } from '@/types';
 import { Metadata } from 'next';
 

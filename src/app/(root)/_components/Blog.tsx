@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-import blogPosts from "@/constant/blogPosts";
+import blogPosts from "@/config/blogPosts";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";

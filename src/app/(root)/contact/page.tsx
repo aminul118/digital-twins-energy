@@ -1,4 +1,4 @@
-import ContactUs from "@/components/modules/contact/ContactUs";
+import ContactUs from "./_components/ContactUs";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";
 

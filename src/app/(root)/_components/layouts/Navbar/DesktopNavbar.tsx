@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { mainNavLinks } from "@/constant/navMenu";
+import { mainNavLinks } from "@/config/menus";
 import { Button } from "@/components/ui/button";
 import { PhoneCall } from "lucide-react";
 import { ModeToggle } from "./Toggle";

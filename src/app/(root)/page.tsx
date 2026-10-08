@@ -1,9 +1,9 @@
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyDigitalTwin from "@/components/common/WhyDigitalTwin";
-import Blog from "@/components/modules/Home/Blog";
-import FAQ from "@/components/modules/Home/FAQ";
-import HeroSection from "@/components/modules/Home/HeroSection";
-import OurSolutions from "@/components/modules/Home/OurSolution";
+import Blog from "./_components/Blog";
+import FAQ from "./_components/FAQ";
+import HeroSection from "./_components/HeroSection";
+import OurSolutions from "./_components/OurSolution";
 import generateMetaTags from "@/seo/generateMetaTags";
 import { Metadata } from "next";
 

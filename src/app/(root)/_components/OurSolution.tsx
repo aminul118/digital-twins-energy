@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import SectionTitle from "@/components/ui/SectionTitle";
-import services from "@/constant/services";
+import services from "@/config/services";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const OurSolutions = () => {

@@ -1,5 +1,5 @@
 import { CheckCircle } from "lucide-react";
-import { content, coreValues } from "@/constant/corevalue";
+import { content, coreValues } from "@/config/corevalue";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { Card } from "@/components/ui/card";
